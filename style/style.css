@@ -1,0 +1,293 @@
+@import './fonts.css';
+
+:root {
+    --P400: 'Poppins-Regular';
+    --P500: 'Poppins-Medium';
+    --P700: 'Poppins-Bold';
+    --P800: 'Poppins-ExtraBold';
+    --bg: #926FF6;
+    --pink: #F3849F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    height: 100vh;
+    background-color: var(--bg);
+}
+
+.nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    gap: 35px;
+    padding: 40px 0 25px;
+}
+
+.logo {
+    color: white;
+    font-family: var(--P800);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.list__link {
+    font-family: var(--P400);
+    font-size: 18px;
+    line-height: 24px;
+    transition: 0.3s;
+    position: relative;
+    color: whitesmoke;
+}
+
+.list__link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    height: 4px;
+    background-color: white;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.list__link:hover::after {
+    width: 100%;
+    left: 0%;
+}
+
+.header__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 240px;
+}
+
+.pre__title {
+    font-family: var(--P800);
+    font-weight: 800;
+    color: #FFE074;
+}
+
+.title {
+    font-family: var(--P800);
+    font-weight: 800;
+    color: white;
+    font-size: 62px;
+}
+
+.text {
+    font-family: var(--P400);
+    font-size: 18px;
+    color: white;
+}
+
+.arrow__down {
+    width: 55px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+.about {
+    display: flex;
+    align-items: start;
+    gap: 75px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    height: 300px;
+}
+
+.about__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.about__preTitle {
+    font-family: var(--P700);
+    font-weight: 700;
+    color: gold;
+    letter-spacing: 1px;
+}
+
+.about__title {
+    font-family: var(--P500);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.about__text {
+    font-family: var(--P400);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.about__play {
+    font-size: 25px;
+    font-family: var(--P700);
+    color: var(--pink);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about__play i {
+    font-size: 50px;
+}
+
+
+.develop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    padding: 20px 15px;
+}
+
+.develop__item {
+    max-width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.fa-ballot {
+    padding: 20px;
+    font-size: 18px;
+    background-color: var(--bg);
+    color: white;
+    border-radius: 50%;
+}
+
+.icon2 {
+    background-color: var(--pink);
+}
+
+.icon3 {
+    background-color: aqua;
+}
+
+.develop__title {
+    font-family: var(--P500);
+}
+
+.develop__text {
+    font-family: var(--P400);
+}
+
+.develop__item:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.424);
+}
+
+.portfolio__pre-title {
+    font-family: var(--P700);
+    font-weight: 700;
+    color: gold;
+}
+
+.portfolio__title {
+    font-family: var(--P500);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 3%;
+    margin: 10px 0;
+}
+
+.port__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.port__link {
+    font-family: var(--P500);
+    padding: 3px 20px;
+    border-radius: 15px;
+    color: black;
+    transition: 0.5s;
+}
+
+.port__link:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+.port__info {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.recent {
+    text-align: center;
+}
+
+.recent__info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+
+.recent__item {
+    width: 290px;
+}
+
+.recent__title {
+    font-family: var(--P700);
+    color: var(--pink);
+    text-align: start;
+    margin: 7px 0;
+}
+
+.recent__text {
+    font-family: var(--P400);
+    text-align: justify;
+}
